@@ -1,0 +1,53 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="section">
+    <div class="container">
+      <h1 class="title is-3 is-spaced">
+        Timestamp microservice
+      </h1>
+      <h2 class="title is-4">
+        Usage:
+      </h2>
+      <p>
+        Providing a timestamp in either the unix format (ms since Jan 01 1970) or a natural string this API returns an Object in JSON notation containing both formats.
+      </p>
+      <hr>
+      <h2 class="title is-4">
+        Example Usage:
+      </h2>
+      <p>
+        <code>https://fcc-timestampms.glitch.me/1514073600000</code><br>
+        <code>https://fcc-timestampms.glitch.me/24 December 2017</code><br>
+        <code>https://fcc-timestampms.glitch.me/Sun Dec 24 2017</code><br>
+      </p>
+      <hr>
+      <h2 class="title is-4">
+        Example Output:
+      </h2>
+      <p>
+        <code>{"unix":1514073600000,"natural":"Sun Dec 24 2017"}</code>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>
